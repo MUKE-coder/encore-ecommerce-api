@@ -5,11 +5,16 @@
   "description": "Encore Typescript Starter",
   "license": "MPL-2.0",
   "type": "module",
+  "scripts": {
+    "postinstall": "npx prisma generate --schema=prisma/schema.prisma"
+  },
   "devDependencies": {
     "@types/node": "^20.5.7",
+    "prisma": "^6.2.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@prisma/client": "^6.2.1",
     "encore.dev": "^1.46.0"
   }
 }
